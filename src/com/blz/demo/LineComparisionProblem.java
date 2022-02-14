@@ -22,10 +22,19 @@ public class LineComparisionProblem {
 		return lineLength;
 	}
 
+	public static void equalityCheck(int line1Length, int line2Length) {
+		if (line1Length == line2Length) {
+			System.out.println("two lines are equal");
+		} else {
+			System.out.println("two lines are not equal");
+		}
+	}
+
 	public static void main(String[] args) {
 		System.out.println("Welcome to Line Comparison Computation program on master branch ");
-		int lineLength = LineLengthCal();
-		System.out.println("The length of line is: " + lineLength);
+		int line1Length = LineLengthCal();
+		int line2Length = LineLengthCal();
+		equalityCheck(line1Length, line2Length);
 
 	}
 	// TODO Auto-generated method stub
